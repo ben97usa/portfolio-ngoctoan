@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ngoc Toan Pham | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="game.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Notification Bar -->
+  <div class="top-bar">
+    I turn coffee into code, and problems into solutions.
+  </div>
+
+  <!-- Hermes-Style Header -->
+  <div class="lux-header">
+    <div class="lux-left">
+      <input type="text" placeholder="Search" class="search-input">
+    </div>
+    <div class="lux-center">
+      <img src="header.avif" alt="Ngoc Toan Pham Logo" class="lux-logo">
+
+    </div>
+    <div class="lux-right">
+      <a href="#contact" class="message-link">Message Me</a>
+    </div>    
+  </div>
+
+  <!-- Main Navigation -->
+<!-- Main Navigation -->
+<nav class="lux-nav">
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+  <!-- Hero Section -->
+  <header class="hero fade-in">
+    <div class="hero-content fade-in">
+      <h2>Hi, I'm <span class="highlight flicker">Ngoc Toan Pham</span></h2>
+      <p>CS Graduate • Full-Stack Developer • Problem Solver</p>
+      <a href="#projects" class="btn pop-in">View My Work</a>
+    </div>
+    <section class="mini-game section fade-in">
+      <h2>Play a Code Challenge 👨‍💻</h2>
+      <div id="game-box">
+        <div class="stars-container">
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <!-- Add more if desired -->
+        </div>        
+        <div id="quiz-box">
+          <h2>🧠 Code Puzzle</h2>
+          <p id="question">What will this print?</p>
+          <pre><code>print("Hello" + str(5))</code></pre>
+          <div class="choices">
+            <button onclick="checkAnswer(this)">Hello5</button>
+            <button onclick="checkAnswer(this)">Hello</button>
+            <button onclick="checkAnswer(this)">Error</button>
+          </div>
+          <p id="result"></p>
+        </div>        
+      </div>
+    </section>
+  </header>
+
+    <!-- Game layout -->
+
+  
+
+  <!-- About Section -->
+  <section id="about" class="section slide-up">
+    <h2>About Me</h2>
+    <p>I'm a Computer Science graduate (CSUEB, Summer 2025) with experience in building Android apps, responsive web apps, and OS-level simulations. I enjoy solving real-world problems through clean, scalable code.</p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section fade-in">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card fade-in">
+        <img src="mobile-fitness.png" alt="Astronaut Icon" class="project-icon" />
+        <h3>Mobile Fitness Tracker App</h3>
+        <p>Android app using sensors and GPS to track steps, calories, and sleep. Built with <em>Java, Android Studio, SQLite</em>.</p>
+      </div>
+  
+      <div class="project-card fade-in">
+        <img src="web-based.png" alt="Task App Icon" class="project-icon" />
+        <h3>Web-Based Task Management Tool</h3>
+        <p>Full-stack web app with deadlines, tagging, and filters. Technologies: <em>HTML, CSS, JS, Node.js</em>.</p>
+      </div>
+  
+      <div class="project-card fade-in">
+        <img src="os-stimulation.png" alt="Rocket Icon" class="project-icon" />
+        <h3>OS Simulation</h3>
+        <p>Simulated memory paging, scheduling, and filesystems in a team project. Built with <em>C++, Linux</em>.</p>
+      </div>
+  
+      <div class="project-card fade-in">
+        <img src="Ai-game-solver.png" alt="AI Icon" class="project-icon" />
+        <h3>AI Game Solver</h3>
+        <p>Used A* and minimax with pruning to automate turn-based game strategies. Built in <em>Python</em>.</p>
+      </div>
+    </div> <!-- ✅ CLOSE .project-grid -->
+  </section>
+  
+
+  <!-- Skills Section -->
+  <section id="skills" class="section slide-up">
+    <h2>Technologies & Tools</h2>
+    <ul class="skills-list">
+      <li>C++</li>
+      <li>Java</li>
+      <li>Python</li>
+      <li>JavaScript</li>
+      <li>HTML/CSS</li>
+      <li>Node.js</li>
+      <li>React</li>
+      <li>Android Studio</li>
+      <li>Qt</li>
+      <li>Linux</li>
+    </ul>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section fade-in">
+    <h2>Experience</h2>
+    <div class="project-card fade-in">
+      <h3>Sanmina Corporation – Assembler</h3>
+      <p>Performed PCB assembly using IPC standards. Collaborated with QA to troubleshoot and resolve defects. (2017)</p>
+    </div>
+    <div class="project-card fade-in">
+      <h3>Kelytech Corporation – Assembler</h3>
+      <p>Built and tested custom magnetic components for power electronics. Worked from engineering schematics. (2018–2019)</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section fade-in">
+    <h2>Contact</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit" class="btn pop-in">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Ngoc Toan Pham. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const starsContainer = document.querySelector('.stars-container');
+  
+    for (let i = 0; i < 25; i++) {
+      const star = document.createElement('div');
+      star.classList.add('star');
+      star.style.left = `${Math.random() * 100}%`;
+      star.style.top = `${-Math.random() * 200}px`; // Start off screen
+      star.style.animationDelay = `${Math.random() * 5}s`;
+      starsContainer.appendChild(star);
+    }
+  </script>
+  
+  
+</body>
+</html>
